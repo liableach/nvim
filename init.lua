@@ -25,3 +25,4 @@ end, { desc = "Open terminal in vertical split" })
 
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
+
