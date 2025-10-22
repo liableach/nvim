@@ -25,4 +25,7 @@ end, { desc = "Open terminal in vertical split" })
 
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
+vim.keymap.set("n", "<leader>cat", "<cmd>colorscheme catppuccin-macchiato<cr>", { desc = "Set colorscheme to Catppuccin Macchiato" })
+vim.keymap.set("n", "<leader>rose", "<cmd>colorscheme rose-pine<cr>", { desc = "Set colorscheme to Rose Pine" })
+
 
