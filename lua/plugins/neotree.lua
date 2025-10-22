@@ -16,7 +16,7 @@ return {
         require("neo-tree").setup({
         filesystem = {
           filtered_items = {
-            visible = true, -- show hidden files if you want
+            --visible = true, -- show hidden files if you want
           },
         },
       })
