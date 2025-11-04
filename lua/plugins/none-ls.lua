@@ -20,8 +20,6 @@ return {
 
                 null_ls.builtins.diagnostics.cppcheck, -- C/C++
 
-                --null_ls.builtins.diagnostics.jdtls, -- Java
-
                 null_ls.builtins.diagnostics.trivy, -- Security
             },
         })

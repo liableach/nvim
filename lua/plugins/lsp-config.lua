@@ -34,11 +34,6 @@ return {
         vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
       end
 
-      navic.setup({
-        highlight = true,
-        separator = " > ",
-      })
-
       local on_attach = function(client, bufnr)
         if client.server_capabilities.documentSymbolProvider then
           navic.attach(client, bufnr)
@@ -57,7 +52,7 @@ return {
         map("n", "<leader>r", vim.diagnostic.open_float, "Line Diagnostics")
       end
 
-      local servers = { "lua_ls", "pyright", "clangd", "ocamllsp", "jdtls" }
+      local servers = { "lua_ls", "pyright", "clangd", "ocamllsp", "jdtls", "rust_analyzer" }
 
       mason_lspconfig.setup({
         ensure_installed = servers,
@@ -70,7 +65,7 @@ return {
         vim.lsp.config[server_name] = {
           on_attach = on_attach,
           capabilities = capabilities,
-        }
+}
       end
 
       for _, server_name in ipairs(servers) do
